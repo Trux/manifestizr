@@ -51,27 +51,141 @@
                     </section>
                   
                     <section>
-                    <h2 class="separator">3-permissions</h2>
-                    <h3>Hosted/privileged app permissions</h3>
-                    <div class='customize-section'>
-                        <div><label> <input type="checkbox" value="alarms">alarms</input></label>
-
-                            <label> <input type="checkbox" value="device-storage:pictures">device-storage:pictures</input>
-                                <ul>
-                                    <li>description: <input type="text"></li>
-                                    <li>access
-                                        <select name="access" id="camera_access">
-                                            <option value="readonly">readonly</option>
-                                            <option value="readwrite">readwrite</option>
-                                            <option value="readcreate">readcreate</option>
-                                            <option value="createonly">createonly</option>
-                                        </select>
-                                     </li>
-                                 </ul>
-                                 </label>
-                            </div>
+                    <h2 class="separator">3-permissions</h2>                    
+                    <div class='customize-section customize-h5bp-no-title last-section'>
+                        <label>
+                            <input type="checkbox" value="alarms">alarms</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="audio-channel-normal">audio channel normal</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="audio-channel-content">audio channel content</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="audio-channel-alarm">audio channel alarm</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="audio-channel-notification">audio channel notification</input>
+                        </label>                        
+                        
+                        <label>
+                            <input type="checkbox" value="browser">browser</input>
+                        </label>
                     </div>
 
+                    <div class='customize-section customize-h5bp-no-title customize-h5bp-no-title-middle'>
+                        <h3>Hosted/privileged app permissions</h3>
+                        <label>
+                            <input type="checkbox" value="contacts">contacts</input>
+                        </label>
+                        <ul>
+                            <li>description: <input type="text"></li>
+                            <li>access
+                            <select name="access" id="_access">
+                                <option value="readonly">readonly</option>
+                                <option value="readwrite">readwrite</option>
+                                <option value="readcreate">readcreate</option>
+                                <option value="createonly">createonly</option>
+                            </select>
+                            </li>
+                        </ul>
+                        
+                        
+                        
+                        <label>
+                            <input type="checkbox" value="desktop-notification">desktop notification</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="device-storage:music">device-storage:music</input>
+                            <ul>
+                                <li>description: <input type="text"></li>
+                                <li>access
+                                <select name="access" id="_access">
+                                    <option value="readonly">readonly</option>
+                                    <option value="readwrite">readwrite</option>
+                                    <option value="readcreate">readcreate</option>
+                                    <option value="createonly">createonly</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </label>
+                        
+                        
+                        <label>
+                            <input type="checkbox" value="device-storage:pictures">device storage:pictures</input>
+                            <ul>
+                                <li>description: <input type="text"></li>
+                                <li>access
+                                <select name="access" id="_access">
+                                    <option value="readonly">readonly</option>
+                                    <option value="readwrite">readwrite</option>
+                                    <option value="readcreate">readcreate</option>
+                                    <option value="createonly">createonly</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="device-storage:videos">device storage:videos</input>
+                            <ul>
+                                <li>description: <input type="text"></li>
+                                <li>access
+                                <select name="access" id="_access">
+                                    <option value="readonly">readonly</option>
+                                    <option value="readwrite">readwrite</option>
+                                    <option value="readcreate">readcreate</option>
+                                    <option value="createonly">createonly</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="device-storage:sdcard">device storage:sdcard</input>
+                            <ul>
+                                <li>description: <input type="text"></li>
+                                <li>access
+                                <select name="access" id="_access">
+                                    <option value="readonly">readonly</option>
+                                    <option value="readwrite">readwrite</option>
+                                    <option value="readcreate">readcreate</option>
+                                    <option value="createonly">createonly</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </label>
+                        
+                    </div>
+
+                    <div class='customize-section customize-h5bp-no-title'>
+                         <label>
+                            <input type="checkbox" value="fmradio">fmradio</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="geolocation">geolocation</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="storage">storage</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="systemXHR">systemXHR</input>
+                        </label>
+                        
+                        <label>
+                            <input type="checkbox" value="tcp-socket">tcp-socket</input>
+                        </label>
+                    </div>
+                   
                     <h3>Certified app permissions</h3>
                     <div class='customize-section'>
                             <div><label> <input type="checkbox" value="device-storage:pictures">device-storage:pictures</input></label>
