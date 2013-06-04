@@ -765,3 +765,7 @@ textarea{
 .customize-section ul{
     list-style: none;
 }
+
+.access-parameters{
+    display: none;
+}
