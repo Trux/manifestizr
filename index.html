@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <!--[if lt IE 9]>
+            <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+            <script>window.html5 || document.write('<script src="js/vendor/html5shiv.js"><\/script>')</script>
+        <![endif]-->
+    </head>
+    <body>
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <h1 class="title">FirefoxOS manifestizr</h1>
+                <h2>Start a firefox Os app in 42 seconds!</h2>
+            </header>
+        </div>
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+                <div id="intro" class="clearfix">
+                <div id="badges" class="clearfix">
+                </div>
+                <p>
+                manifestizr helps you create the basis for your own awesome firefoxOs app!
+                </p>
+                </div>
+                <article>                    
+                    <section>
+                    <h2 class="separator">1 - About your app</h2>
+                        <label>name<input type="text" ></input></label>
+                        <label>description<input type="text" ></input></label>
+                        <label>Types of packaged apps<select name="app_type" id="app_type">
+                        <option value="privileged_app">Privileged app</option>
+                        <option value="certified_app">Certified app</option>
+                        <option value="hosted_apps">hosted apps</option></select></label>
+                        <label>default locale <input type="text"></select></label>
+                    </section>
+
+                     <section>
+                        <h2 class="separator">2 - About you</h2>
+                       <label>name<input type="text" ></input></label>
+                       <label>url<input type="url" ></input></label>
+                    </section>
+                  
+                    <section>
+                    <h2 class="separator">3-permissions</h2>
+                    <h3>Hosted/privileged app permissions</h3>
+                    <div class='customize-section'>
+                        <div><label> <input type="checkbox" value="alarms">alarms</input></label>
+
+                            <label> <input type="checkbox" value="device-storage:pictures">device-storage:pictures</input>
+                                <ul>
+                                    <li>description: <input type="text"></li>
+                                    <li>access
+                                        <select name="access" id="camera_access">
+                                            <option value="readonly">readonly</option>
+                                            <option value="readwrite">readwrite</option>
+                                            <option value="readcreate">readcreate</option>
+                                            <option value="createonly">createonly</option>
+                                        </select>
+                                     </li>
+                                 </ul>
+                                 </label>
+                            </div>
+                    </div>
+
+                    <h3>Certified app permissions</h3>
+                    <div class='customize-section'>
+                            <div><label> <input type="checkbox" value="device-storage:pictures">device-storage:pictures</input></label>
+                                <ul>
+                                    <li>description: <input type="text"></li>
+                                    <li>access
+                                        <select name="access" id="camera_access">
+                                            <option value="readonly">readonly</option>
+                                            <option value="readwrite">readwrite</option>
+                                            <option value="readcreate">readcreate</option>
+                                            <option value="createonly">createonly</option>
+                                        </select>
+                                     </li>
+                                 </ul>
+                    </div>
+                           
+                    </div>           
+                    <div class='customize-section'>
+                            <label><input type="checkbox" value="camera">camera</input></label>
+                            
+                    </div> 
+                    <div class='customize-section'>
+                            <label><input type="checkbox" value="camera">camera</input></label>
+                            
+                    </div>
+                    
+                    </section>
+
+                  <section><div id="download-section" class="clearfix">
+                      <a href="www.google.com">Download it!</a>
+                  </div></section>
+                </article>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div id="about-container">
+            <div class="wrapper"></div>
+                <div id="github-container" class="clearfix">
+                    
+                </div>
+                <article id="docs">
+                    <h3>Another *izr? When will this stop</h3>
+                    <p>Manifestizr is a simple way to jump start your firefox OS app development. Just select the type of app you want, choose permissions and you're off.</p>
+                </article>
+            
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
