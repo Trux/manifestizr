@@ -1,3 +1,3 @@
 $(document).ready(function () {
-	$("#bubble").tipTip();
+	$(".info").tipTip({maxWidth: "auto", defaultPosition:"top"});
 });

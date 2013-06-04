@@ -5,19 +5,19 @@
         <title>Manifestizr</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-
         <link rel="stylesheet" href="css/normalize.min.css">
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/tipTip.css">
     </head>
     <body>
 
         <div class="header-container">
             <header class="wrapper clearfix">
                 <h1 class="title">FirefoxOS manifestizr</h1>
-                <h2>Start a firefox Os app in 42 seconds !</h2>
-                <a id='test' title ='voyons voir' href="">Tipsy</a>
+                <h2>Start a firefox Os app in 42 seconds !</h2>                
             </header>
         </div>
+        
         <div class="main-container">
             <div class="main wrapper clearfix">
                 <div id="intro" class="clearfix">
@@ -30,7 +30,7 @@
                 <article>                    
                     <section>
                     <h2 class="separator">1 - About your app</h2>
-                        <label>name<input type="text" ></input></label>
+                        <label for="appName">name<input id='appName' type="text" ></input></label>
                         <label>description<input type="text" ></input></label>
                         <label>Types of packaged apps<select name="app_type" id="app_type">
                         <option value="privileged_app">Privileged app</option>
@@ -76,7 +76,7 @@
                         <ul class='access-parameters'>
                             <li>description: <input type="text"></li>
                             <li>access
-                            <select name="access" id="_access">
+                            <select name="access" class="_access">
                                 <option value="readonly">readonly</option>
                                 <option value="readwrite">readwrite</option>
                                 <option value="readcreate">readcreate</option>
@@ -88,7 +88,7 @@
                     </div>
 
                     <div class='customize-section customize-h5bp-no-title customize-h5bp-no-title-middle'>
-                        <h3 class"second-h5bp-label">Hosted/privileged permissions</h3>
+                        <h3 class="second-h5bp-label">Hosted/privileged permissions</h3>
                         <label>
                             <input type="checkbox" value="browser"> browser</input>
                         </label>
@@ -103,7 +103,7 @@
                             <ul class="access-parameters">
                                 <li>description: <input type="text"></li>
                                 <li>access
-                                <select name="access" id="_access">
+                                <select name="access" class="_access">
                                     <option value="readonly">readonly</option>
                                     <option value="readwrite">readwrite</option>
                                     <option value="readcreate">readcreate</option>
@@ -120,7 +120,7 @@
                             <ul class="access-parameters">
                                 <li>description: <input type="text"></li>
                                 <li>access
-                                <select name="access" id="_access">
+                                <select name="access" class="_access">
                                     <option value="readonly">readonly</option>
                                     <option value="readwrite">readwrite</option>
                                     <option value="readcreate">readcreate</option>
@@ -139,20 +139,14 @@
                             <ul class="access-parameters">
                                 <li>description: <input type="text"></li>
                                 <li>access
-                                <select name="access" id="_access">
+                                <select name="access" class="_access">
                                     <option value="readonly">readonly</option>
                                     <option value="readwrite">readwrite</option>
                                     <option value="readcreate">readcreate</option>
                                     <option value="createonly">createonly</option>
                                 </select>
                                 </li>
-                            </ul>                        
-                        
-                    
-
-                   
-                        
-                       
+                            </ul>
                         </div>
     
                         <div class='customize-section customize-h5bp-no-title'>
@@ -182,7 +176,7 @@
                             <ul class="access-parameters">
                                 <li>description: <input type="text"></li>
                                 <li>access
-                                <select name="access" id="_access">
+                                <select name="access" class="_access">
                                     <option value="readonly">readonly</option>
                                     <option value="readwrite">readwrite</option>
                                     <option value="readcreate">readcreate</option>
@@ -233,7 +227,7 @@
                     </div>
 
                     <div class='customize-section customize-h5bp-no-title customize-h5bp-no-title-middle'>
-                        <h3 class"second-h5bp-label">certified permissions</h3>
+                        <h3 class="second-h5bp-label">certified permissions</h3>
                         <label>
                             <input type="checkbox" value="device-storage:apps"> device storage</input>
                         </label>
@@ -241,11 +235,7 @@
                         <label>
                             <input type="checkbox" value="embed-apps"> embed apps</input>
                         </label>
-                        
-                        <label>
-                            <input type="checkbox" value="embed-apps"> embed apps</input>
-                        </label>
-                        
+                                                
                         <label>
                             <input type="checkbox" value="idle" > idle</input>
                         </label>
@@ -302,14 +292,15 @@
                             
                             <label>
                                 <input type="checkbox" value="webapps-manage"> Open Webapps</input>
+                                <a href="" class='info' title='Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae elit in odio posuere tristique iaculis nec lacus. '>?</a>
                             </label>
                             
                             <label>
                                 <input  type="checkbox" value="wifi-manage"> WiFi Management</input>
-                                <a href="" id='bubble' title='teststststst'>test</a>
+                                <a href="" class='info' title='teststststst'>?</a>
                             </label>
                     </div>
-
+                
                 <section>
                     <div id="download-section" class="clearfix">
                         <a href="http://www.google.com">Download it!</a>
@@ -331,14 +322,9 @@
                 </article>
             
         </div>
-
-        <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
-        <script src='js/jquery.tipTip.minified'></script>
-        <link rel="stylesheet" href="css/tipTip.css">
+        <script src="js/jquery.min.js"></script>
+        <script src='js/jquery.tipTip.minified.js'></script>
         <script src="js/main.js"></script>
 
-
-
-        </script>
     </body>
 </html>

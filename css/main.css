@@ -769,3 +769,7 @@ textarea{
 .access-parameters{
     display: none;
 }
+
+.info{
+    float: right;
+}
