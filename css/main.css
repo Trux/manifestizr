@@ -702,10 +702,6 @@ textarea{
         clear:none;
     }
     
-    .customize-section:nth-child(3n + 1){
-        clear:both;
-    }
-
 
     #about-container article{
         width:530px;
