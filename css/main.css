@@ -773,3 +773,11 @@ textarea{
 .info{
     float: right;
 }
+
+#hosted{
+    /*margin-bottom: 38em;*/
+}
+
+#hosted{
+    display: block;
+}
